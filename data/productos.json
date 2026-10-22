@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auriculares Gamer HyperX Cloud II",
+    "categoria": "Audio",
+    "precio": 60000,
+    "stock": 10,
+    "imagen": "assets/images/auricularhyperx.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Parlante Bluetooth Sony Portátil",
+    "categoria": "Audio",
+    "precio": 45000,
+    "stock": 8,
+    "imagen": "assets/images/parlantesony.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado Mecánico Madlions 68 PRO RGB",
+    "categoria": "Perifericos",
+    "precio": 65000,
+    "stock": 5,
+    "imagen": "assets/images/tecladomadlions.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Mouse Gamer ATK DRAGONFLY A9",
+    "categoria": "Perifericos",
+    "precio": 32000,
+    "stock": 12,
+    "imagen": "assets/images/atkmousea9.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Silla Gamer Corsair",
+    "categoria": "Muebles",
+    "precio": 120000,
+    "stock": 7,
+    "imagen": "assets/images/sillacorsair.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Silla Gamer Secretlab TITAN Evo",
+    "categoria": "Muebles",
+    "precio": 200000,
+    "stock": 4,
+    "imagen": "assets/images/sillagamersecretlab.webp"
+  },
+  {
+    "id": 7,
+    "nombre": "Tarjeta de Video NVIDIA GeForce RTX 3060",
+    "categoria": "Componentes",
+    "precio": 350000,
+    "stock": 3,
+    "imagen": "assets/images/placanvidia.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "Procesador AMD Ryzen 5 5600X",
+    "categoria": "Componentes",
+    "precio": 250000,
+    "stock": 6,
+    "imagen": "assets/images/amdprocesador.webp"
+  },
+  {
+    "id": 9,
+    "nombre": "Fuente de Poder EVGA 600 W1",
+    "categoria": "Componentes",
+    "precio": 80000,
+    "stock": 9,
+    "imagen": "assets/images/fuenteevga.webp"
+  },
+  {
+    "id": 10,
+    "nombre": "Disco Duro Externo Seagate 2TB",
+    "categoria": "Componentes",
+    "precio": 90000,
+    "stock": 11,
+    "imagen": "assets/images/discoduro.webp"
+  },
+  {
+    "id": 11,
+    "nombre": "Memoria RAM Corsair Vengeance LPX 16GB",
+    "categoria": "Componentes",
+    "precio": 120000,
+    "stock": 5,
+    "imagen": "assets/images/ramcorsair.webp"
+  },
+  {
+    "id": 12,
+    "nombre": "Placa Base ASUS ROG Strix B550-F",
+    "categoria": "Componentes",
+    "precio": 180000,
+    "stock": 4,
+    "imagen": "assets/images/placaasusrog.webp"
+  },
+  {
+    "id": 13,
+    "nombre": "Microfono USB Blue Yeti",
+    "categoria": "Perifericos",
+    "precio": 70000,
+    "stock": 6,
+    "imagen": "assets/images/microfonoyeti.webp"
+  },
+  {
+    "id": 14,
+    "nombre": "Silla Gamer DXRacer Formula Series",
+    "categoria": "Muebles",
+    "precio": 220000,
+    "stock": 3,
+    "imagen": "assets/images/sillaformulaseries.webp"
+  }
+]
