@@ -123,7 +123,7 @@ function actualizarVistaCarrito() {
     if (carrito.length === 0) {
         contenedorCarrito.innerHTML = `
             <div class="text-center py-8 text-zinc-500 text-xs">
-                🛒 Tu carrito está vacío
+                Tu carrito está vacío
             </div>
         `;
         if (totalCarrito) totalCarrito.innerText = '$ 0';
@@ -137,23 +137,21 @@ function actualizarVistaCarrito() {
         totalPrecio += subtotal;
 
         contenedorCarrito.innerHTML += `
-            <div class="flex justify-between items-center bg-zinc-950/60 p-3 rounded-xl text-xs border border-zinc-800/60 gap-2">
-                <div class="flex flex-col gap-0.5 overflow-hidden">
-                    <span class="font-medium text-zinc-200 truncate">${producto.nombre}</span>
-                    <span class="text-[11px] text-zinc-400">$${producto.precio.toLocaleString('es-AR')} c/u</span>
+            <div class="bg-zinc-950/80 p-3 rounded-xl border border-zinc-800/80 flex flex-col gap-2">
+                <div class="flex justify-between items-start gap-2">
+                    <span class="font-semibold text-xs text-zinc-200 line-clamp-1">${producto.nombre}</span>
                 </div>
-                <div class="flex items-center gap-3 shrink-0">
-                    <div class="flex items-center bg-zinc-900 rounded-lg border border-zinc-700 overflow-hidden">
-                        <button class="btn-restar px-2 py-1 text-zinc-400 hover:text-white hover:bg-zinc-800 transition" data-id="${producto.id}">-</button>
-                        <span class="px-2 font-semibold text-zinc-200">${producto.cantidad}</span>
-                        <button class="btn-sumar px-2 py-1 text-zinc-400 hover:text-white hover:bg-zinc-800 transition" data-id="${producto.id}">+</button>
+                <div class="flex items-center justify-between mt-1">
+                    <span class="text-[11px] text-zinc-400">$${producto.precio.toLocaleString('es-AR')} c/u</span>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center bg-zinc-900 border border-zinc-800 rounded-lg px-1 py-0.5">
+                            <button class="btn-restar px-2 py-0.5 text-zinc-400 hover:text-white text-xs" data-id="${producto.id}">-</button>
+                            <span class="px-1.5 text-xs font-semibold text-zinc-200">${producto.cantidad}</span>
+                            <button class="btn-sumar px-2 py-0.5 text-zinc-400 hover:text-white text-xs" data-id="${producto.id}">+</button>
+                        </div>
+                        <span class="font-bold text-xs text-white">$${subtotal.toLocaleString('es-AR')}</span>
+                        <button class="btn-eliminar text-zinc-500 hover:text-red-400 text-xs ml-1" data-id="${producto.id}" title="Eliminar">🗑️</button>
                     </div>
-                    <span class="font-bold text-indigo-300 w-16 text-right">$${subtotal.toLocaleString('es-AR')}</span>
-                    <button class="btn-eliminar text-zinc-500 hover:text-red-400 p-1 transition" data-id="${producto.id}" title="Eliminar producto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                        </svg>
-                    </button>
                 </div>
             </div>
         `;
